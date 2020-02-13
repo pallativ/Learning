@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>html page</title>
+    </head>
+    <body>
+        <form>
+            Library name :
+            <input name="library name" type="text" id="library name" value="enter name"  >
+            <br>
+            Library description :
+            <input name="library description " id="library description" value="write here" rows="4" >
+            <br>
+            <input type="checkbox" name="public" id="public" >
+            <label for="public"> public</label>
+            <br>
+         
+            <input name="button" type="button"  value="Submit" onClick="updateTxt('library name', 'library description' )">
+            
+        </form>
+        <script>
+            function updateTxt(field1,field2)
+            {
+                var field1 = document.getElementById(field1).value;  
+                var field2 = document.getElementById(field2).value;  
+                alert(field1 + '\n' + field2);
+
+            }
+  
+        </script>
+    </body>
+    
+    
+</html>
