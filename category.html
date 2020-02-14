@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>bootstrap page</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <form>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Category Name</label>
+          <input type="text" class="form-control" id="Category Name" placeholder="enter your name:">
+        </div>
+       
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Category Description</label>
+          <textarea class="form-control" id="Category Description" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Library Id</label>
+            <input type="number" class="form-control" id="Library Id" placeholder="1234:" readonly>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Library Name</label>
+            <input type="text" class="form-control" id="Library Name" placeholder="abcd" readonly>
+          </div>
+          <input name="button" type="button" value="submit" class="btn btn-primary" onclick="updateTxt('Category Name','Category Description','Library Id','Library Name')">
+          <script>
+                function updateTxt(id1 ,id2, id3, id4)
+                {
+                    var id1 = document.getElementById(id1).value;
+                    var id2 = document.getElementById(id2).value;
+                    var id3 = document.getElementById(id3).value;
+                    var id4 = document.getElementById(id4).value;
+    
+                    alert(id1 + '\n' + id2 + '\n' + id3 + '\n' + id4);
+                }
+            </script>
+
+      </form>
+       
+    <body>
+
+    </body>
+</html>
