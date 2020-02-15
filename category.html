@@ -1,42 +1,50 @@
 <html>
     <head>
-        <title>bootstrap page</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    </head>
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Category Name</label>
-          <input type="text" class="form-control" id="Category Name" placeholder="enter your name:">
-        </div>
-       
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Category Description</label>
-          <textarea class="form-control" id="Category Description" rows="3"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Library Id</label>
-            <input type="number" class="form-control" id="Library Id" placeholder="1234:" readonly>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Library Name</label>
-            <input type="text" class="form-control" id="Library Name" placeholder="abcd" readonly>
-          </div>
-          <input name="button" type="button" value="submit" class="btn btn-primary" onclick="updateTxt('Category Name','Category Description','Library Id','Library Name')">
-          <script>
-                function updateTxt(id1 ,id2, id3, id4)
-                {
-                    var id1 = document.getElementById(id1).value;
-                    var id2 = document.getElementById(id2).value;
-                    var id3 = document.getElementById(id3).value;
-                    var id4 = document.getElementById(id4).value;
-    
-                    alert(id1 + '\n' + id2 + '\n' + id3 + '\n' + id4);
-                }
-            </script>
-
-      </form>
-       
+        <title>New Category</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+        <script src="jquery/jquery-3.4.1.min.js" type="text/javascript" ></script>
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" ></script>
+    </head>     
     <body>
+      <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Create New Category
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="NewLibraryModal">New Category</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="CategoryName">Category Name</label>
+              <input type="text" class="form-control" id="CategoryName" placeholder="Enter Your Name">
+            </div>
+           
+            <div class="form-group">
+              <label for="CategoryDescription">Category Description</label>
+              <textarea class="form-control" id="CategoryDescription" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="LibraryId">Library Id</label>
+                <input type="number" class="form-control" id="LibraryId" placeholder="1234" readonly>
+              </div>
+              <div class="form-group">
+                <label for="LibraryName">Library Name</label>
+                <input type="text" class="form-control" id="LibraryName" placeholder="Enter Your Name" readonly>
+              </div>
+              <input name="button" type="button" value="submit" class="btn btn-primary">
+              
+    
+          </form>
 
     </body>
 </html>

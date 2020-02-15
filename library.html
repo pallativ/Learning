@@ -9,13 +9,9 @@
 </head>
 
 <body>
-
-
-
-
-  <!-- Button trigger modal -->
+ <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Click Here
+    Create New Library
   </button>
 
   <!-- Modal -->
@@ -24,7 +20,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Bootstrap Page</h5>
+          <h5 class="modal-title" id="NewLibraryModal">New Library</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -32,17 +28,17 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="exampleFormControlInput1">Library Name :</label>
+              <label for="LibraryName">Library Name :</label>
               <input type="text" class="form-control" id="LibraryName" placeholder="Enter Your Name:">
             </div>
 
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">Library Description :</label>
+              <label for="LibraryDescription">Library Description :</label>
               <textarea class="form-control" id="LibraryDescription" rows="3"></textarea>
             </div>
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Public</label>
+              <input type="checkbox" class="form-check-input" id="Public">
+              <label class="form-check-label" for="CheckPublic">Public</label>
             </div>
 
             <input name="button" type="button" value="submit" class="btn btn-primary">
