@@ -1,37 +1,59 @@
 <html>
-    <head>
-        <title>bootstrap page</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    </head>
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Library Name :</label>
-          <input type="text" class="form-control" id="Library Name" placeholder="enter your name:">
-        </div>
-       
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Library Description :</label>
-          <textarea class="form-control" id="Library Description" rows="3"></textarea>
-        </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-        
-          <input name="button" type="button" value="submit" class="btn btn-primary" onclick="updateTxt('Library Name','Library Description')">
-          <script>
-                function updateTxt(id1 ,id2, id3, id4)
-                {
-                    var id1 = document.getElementById(id1).value;
-                    var id2 = document.getElementById(id2).value;
-                    
-                    alert(id1 + '\n' + id2 );
-                }
-            </script>
 
-      </form>
-       
-    <body>
+<head>
+  <title>New Library</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <script src="jquery/jquery-3.4.1.min.js" />
+  <script src="bootstrap/js/bootstrap.min.js"  ></script>
 
-    </body>
+</head>
+
+<body>
+
+
+
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Click Here
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Bootstrap Page</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Library Name :</label>
+              <input type="text" class="form-control" id="LibraryName" placeholder="Enter Your Name:">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Library Description :</label>
+              <textarea class="form-control" id="LibraryDescription" rows="3"></textarea>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Public</label>
+            </div>
+
+            <input name="button" type="button" value="submit" class="btn btn-primary">
+
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
